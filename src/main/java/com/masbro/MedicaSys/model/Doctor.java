@@ -15,9 +15,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Doctor {
     @Id
-    @Column(name = "documento", nullable = false)
-    private Long documento;
+    @Column(name = "iddoctor", nullable = false)
+    private Long iddoctor;
 
     @Column(name = "nombre", nullable = false)
     private String nombre;
+
+    @Column(name = "contrasena", nullable = false)
+    private String contrasena;
+
+    @Column(name = "autenticado")
+    private boolean autenticado;
 }

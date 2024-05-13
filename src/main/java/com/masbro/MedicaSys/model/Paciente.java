@@ -33,6 +33,6 @@ public class Paciente {
     @Column(name = "direccion", nullable = false)
     private String direccion;
 
-    @Column(name = "idDoctor", nullable = false)
-    private Long idDoctor;
+    @Column(name = "iddoctor", nullable = false)
+    private Long iddoctor;
 }
