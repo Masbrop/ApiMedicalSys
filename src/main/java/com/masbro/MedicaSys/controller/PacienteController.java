@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -62,6 +61,16 @@ public class PacienteController {
         paciente.setDireccion(detallesPaciente.getDireccion());
         paciente.setIddoctor(detallesPaciente.getIddoctor());
 
+        Paciente pacienteActualizado = pacienteRepository.save(paciente);
+        return ResponseEntity.ok(pacienteActualizado);
+    }
+    
+    //Actualizar historial
+    @PutMapping("/historial/{documento}")
+    public ResponseEntity<Paciente> actualizarHistorial(@PathVariable Long documento, @RequestBody Paciente detallesPaciente){
+        Paciente paciente = pacienteRepository.findById(documento)
+                .orElseThrow(() -> new ResourceNoFoundExcepcion(("No existe el paciente con el id" + documento)));
+        paciente.setHistorial(detallesPaciente.getHistorial());
         Paciente pacienteActualizado = pacienteRepository.save(paciente);
         return ResponseEntity.ok(pacienteActualizado);
     }

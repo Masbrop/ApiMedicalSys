@@ -33,6 +33,9 @@ public class Paciente {
     @Column(name = "direccion", nullable = false)
     private String direccion;
 
+    @Column(name = "historial")
+    private String historial;
+
     @Column(name = "iddoctor", nullable = false)
     private Long iddoctor;
 }
