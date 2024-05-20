@@ -1,8 +1,8 @@
-package com.masbro.MedicaSys.controller;
+package com.medicalSys.MedicalSys.controller;
 
-import com.masbro.MedicaSys.ProductoExcepciones.ResourceNoFoundExcepcion;
-import com.masbro.MedicaSys.model.Paciente;
-import com.masbro.MedicaSys.repository.PacienteRepository;
+import com.medicalSys.MedicalSys.ProductoExcepciones.ResourceNoFoundExcepcion;
+import com.medicalSys.MedicalSys.model.Paciente;
+import com.medicalSys.MedicalSys.repository.PacienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -19,7 +19,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/MedicaSys/")
-@CrossOrigin(origins = "http://localhost:4200, http://localhost:4200/")
+@CrossOrigin
 public class PacienteController {
 
     @Autowired

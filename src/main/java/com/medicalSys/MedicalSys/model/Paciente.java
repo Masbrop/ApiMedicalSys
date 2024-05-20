@@ -1,4 +1,4 @@
-package com.masbro.MedicaSys.model;
+package com.medicalSys.MedicalSys.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -33,7 +33,7 @@ public class Paciente {
     @Column(name = "direccion", nullable = false)
     private String direccion;
 
-    @Column(name = "historial")
+    @Column(name = "historial", length = 50000)
     private String historial;
 
     @Column(name = "iddoctor", nullable = false)

@@ -1,4 +1,4 @@
-package com.masbro.MedicaSys.ProductoExcepciones;
+package com.medicalSys.MedicalSys.ProductoExcepciones;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

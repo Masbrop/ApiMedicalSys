@@ -1,4 +1,4 @@
-package com.masbro.MedicaSys.model;
+package com.medicalSys.MedicalSys.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

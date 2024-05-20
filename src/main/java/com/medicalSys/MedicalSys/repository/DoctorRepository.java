@@ -1,6 +1,6 @@
-package com.masbro.MedicaSys.repository;
+package com.medicalSys.MedicalSys.repository;
 
-import com.masbro.MedicaSys.model.Doctor;
+import com.medicalSys.MedicalSys.model.Doctor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
